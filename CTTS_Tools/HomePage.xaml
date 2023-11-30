@@ -1,0 +1,15 @@
+﻿<Page
+    x:Class="CTTS_Tools.HomePage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:CTTS_Tools"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid Padding="40" Background="#012a3f">
+        <Image Source="Assets/LargeTile.scale-400.png" HorizontalAlignment="Center" VerticalAlignment="Center" Width="150"/>
+        <TextBlock x:Name="WelcomeText" FontSize="40" />
+    </Grid>
+</Page>

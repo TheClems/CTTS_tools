@@ -1,0 +1,59 @@
+﻿<Page
+    x:Class="CTTS_Tools.DevicePage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:CTTS_Tools"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid Padding="40" Background="#012a3f">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="Informations systèmes" FontSize="40" Grid.Row="0"/>
+
+        <ScrollViewer Grid.Row="1" VerticalScrollMode="Auto" VerticalScrollBarVisibility="Auto">
+            <StackPanel Orientation="Vertical" VerticalAlignment="Top">
+
+                <TextBlock Text="Général" FontSize="30" Grid.Row="1"/>
+                <StackPanel Orientation="Vertical" HorizontalAlignment="Left" Margin="20,10,0,0">
+                    <TextBlock VerticalAlignment="Center" Text="Nom du PC" />
+                    <TextBox x:ConnectionId='7' IsReadOnly="True" x:Name="ComputerName" />
+                </StackPanel>
+
+                <StackPanel Orientation="Vertical" HorizontalAlignment="Left" Margin="20,10,0,0">
+                    <TextBlock VerticalAlignment="Center" Text="Nom du fabricant" />
+                    <TextBox x:ConnectionId='6' IsReadOnly="True" x:Name="Manufacturer" />
+                </StackPanel>
+
+                <StackPanel Orientation="Vertical" HorizontalAlignment="Left" Margin="20,10,0,0">
+                    <TextBlock VerticalAlignment="Center" Text="Système d'exploitation" />
+                    <TextBox x:ConnectionId='5' IsReadOnly="True" x:Name="OperatingSystem" />
+                </StackPanel>
+                
+                <StackPanel Orientation="Vertical" HorizontalAlignment="Left" Margin="20,10,0,0">
+                    <TextBlock VerticalAlignment="Center" Text="Identifiant du périphérique" />
+                    <TextBox x:ConnectionId='4' IsReadOnly="True" x:Name="DeviceId" />
+                </StackPanel>
+
+
+                <TextBlock Text="Réseau" FontSize="30" Grid.Row="1" Margin="0,20,0,0"/>
+                <StackPanel Orientation="Vertical" HorizontalAlignment="Left" Margin="20,10,0,0">
+                    <TextBlock VerticalAlignment="Center" Text="Adresse IP" />
+                    <TextBox x:ConnectionId='3' IsReadOnly="True" x:Name="IpAdress" />
+                </StackPanel>
+
+                <StackPanel Orientation="Vertical" HorizontalAlignment="Left" Margin="20,10,0,0">
+                    <TextBlock VerticalAlignment="Center" Text="Statut de connection" />
+                    <TextBox x:ConnectionId='2' IsReadOnly="True" x:Name="InternetStatus" />
+                </StackPanel>
+
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</Page>
+

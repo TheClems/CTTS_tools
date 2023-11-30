@@ -1,0 +1,29 @@
+﻿<Page
+    x:Class="CTTS_Tools.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:CTTS_Tools"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid Background="#0a141e">
+        <NavigationView x:ConnectionId='2' x:Name="NavigationViewControl" 
+                        PaneTitle="CTTS Tools"
+                                                        
+                        IsBackButtonVisible="Collapsed"
+                        IsSettingsVisible="False">
+            <NavigationView.MenuItems>
+                <NavigationViewItem Tag="home" Icon="Home" Content="Accueil"  />
+                <NavigationViewItem Tag="clipboard" Icon="Document" Content="Presse-papiers" />
+                <NavigationViewItem Tag="device" Icon="ContactInfo" Content="Informations système"  />
+            </NavigationView.MenuItems>
+
+            <ScrollViewer>
+                <Frame x:ConnectionId='3' x:Name="ContentFrame" IsTabStop="True" />
+            </ScrollViewer>
+        </NavigationView>
+    </Grid>
+</Page>
+
